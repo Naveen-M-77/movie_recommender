@@ -26,4 +26,4 @@ jobs:
         run: npm test -- --watchAll=false --passWithNoTests
 
       - name: Build project
-        run: npm run build
+        run: CI='' npm run build
