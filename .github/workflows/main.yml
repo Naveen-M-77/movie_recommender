@@ -13,6 +13,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Add legacy OpenSSL provider for webpack compatibility on Node >=17
+    env:
+      NODE_OPTIONS: '--openssl-legacy-provider'
 
     steps:
       - name: Checkout repository
