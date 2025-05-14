@@ -22,10 +22,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+  "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+  "test": "react-scripts test --watchAll=false --passWithNoTests",
+  "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

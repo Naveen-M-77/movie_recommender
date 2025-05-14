@@ -14,16 +14,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
           node-version: 16
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run tests
         run: npm test -- --watchAll=false --passWithNoTests
 
       - name: Build project
         run: CI='' npm run build
+
+      - name: Upload build artifact
+        if: success()
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-build
+          path: build/
