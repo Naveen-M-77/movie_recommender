@@ -44,7 +44,7 @@ jobs:
         run: npm run build
 
       - name: Upload production build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: react-build
           path: build/
