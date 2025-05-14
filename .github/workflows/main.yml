@@ -21,7 +21,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install    # use install instead of ci
 
       - name: Run tests
         run: npm test -- --watchAll=false --passWithNoTests
