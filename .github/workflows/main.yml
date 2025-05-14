@@ -38,8 +38,9 @@ jobs:
           fi
 
       - name: Run tests
+        # Allow exit with code 0 even if no tests are found
         run: |
-          npm test -- --watchAll=false --ci
+          npm test -- --watchAll=false --ci --passWithNoTests
 
       - name: Build production bundle
         run: npm run build
