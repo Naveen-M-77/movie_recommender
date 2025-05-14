@@ -28,10 +28,3 @@ jobs:
 
       - name: Build project
         run: CI='' npm run build
-
-      - name: Upload build artifact
-        if: success()
-        uses: actions/upload-artifact@v2   # <-- switch to v2
-        with:
-          name: production-build
-          path: build/
