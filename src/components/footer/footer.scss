@@ -1,0 +1,405 @@
+@use "../../scss/" as *;
+
+
+
+:root {
+
+    /**
+     * colors
+     */
+  
+    --rich-black-fogra-29: hsl(225, 25%, 9%);
+    --rich-black-fogra-39: hsl(170, 21%, 5%);
+    --raisin-black: hsl(228, 13%, 15%);
+    --eerie-black: hsl(207, 19%, 11%);
+    --light-gray: hsl(0, 3%, 80%);
+    --gunmetal-1: hsl(229, 15%, 21%);
+    --gunmetal-2: hsl(216, 22%, 18%);
+    --gainsboro: hsl(0, 7%, 88%);
+    --citrine: hsl(57, 97%, 45%);
+    --xiketic: hsl(253, 21%, 13%);
+    --gray-x: hsl(0, 0%, 74%);
+    --white: hsl(0, 100%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --jet: hsl(0, 0%, 20%);
+  
+    /**
+     * typography
+     */
+  
+    --ff-poppins: 'Poppins', sans-serif;
+  
+    --fs-1: 36px;
+    --fs-2: 32px;
+    --fs-3: 30px;
+    --fs-4: 24px;
+    --fs-5: 20px;
+    --fs-6: 18px;
+    --fs-7: 16px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+    --fs-10: 13px;
+    --fs-11: 12px;
+    --fs-12: 11px;
+  
+    --fw-500: 500;
+    --fw-700: 700;
+  
+    /**
+     * transition
+     */
+  
+    --transition-1: 0.15s ease;
+    --transition-2: 0.25s ease-in;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 100px;
+  
+  }
+  
+
+.footer {
+    position: relative;
+    padding: 6rem 2rem;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__content {
+        max-width: 1000px;
+
+        &__logo {
+            @include flex(center, center);
+            margin-bottom: 3rem;
+        }
+
+        &__menus {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            @include mobile {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__menu {
+            @include flex(flex-start, flex-start);
+            flex-direction: column;
+            margin-top: 1rem;
+
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            & > * ~ * {
+                margin-top: 1rem;
+            }
+        }
+
+        
+    }
+ 
+}
+
+/*-----------------------------------*\
+ * #SERVICE
+\*-----------------------------------*/
+
+.service {
+  background: url("https://jooinn.com/images/black-paper-texture-6.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: var(--section-padding);
+}
+
+.service-banner {
+  position: relative;
+  margin-bottom: 50px;
+  max-width: max-content;
+}
+
+.service-banner img { width: 100%; }
+
+.service-btn {
+  position: absolute;
+  bottom: 0;
+  right: 86px;
+  background: var(--citrine);
+  color: var(--rich-black-fogra-29);
+  font-size: var(--fs-11);
+  text-transform: uppercase;
+  font-weight: var(--fw-500);
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transform: rotate(0.25turn);
+  transform-origin: bottom right;
+  padding: 28px 35px;
+  border-radius: 6px;
+}
+
+.service-btn ion-icon {
+  font-size: 30px;
+  transform: rotate(-0.25turn);
+}
+
+.service-subtitle {
+  position: relative;
+  color: var(--gainsboro);
+  font-size: var(--fs-11);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 50px;
+  margin-bottom: 10px;
+}
+
+.service-subtitle::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--citrine);
+}
+
+.service-title { margin-bottom: 20px; }
+
+.service-text,
+.service-card .card-text {
+  color: var(--gray-x);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
+  line-height: 1.8;
+}
+
+.service-text { margin-bottom: 40px; }
+
+.service-list > li:first-child {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed hsla(0, 0%, 100%, 0.1);
+  margin-bottom: 30px;
+}
+
+.service-card .card-icon {
+  color: var(--white);
+  width: 85px;
+  height: 85px;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  border-radius: 50%;
+  outline: 1px dashed var(--citrine);
+  outline-offset: 5px;
+  margin: 5px;
+  margin-bottom: 20px;
+  transition: var(--transition-2);
+}
+
+.service-card:hover .card-icon { background: var(--citrine); }
+
+.service-card .card-title { margin-bottom: 10px; }
+
+
+
+/**
+ * SERVICE
+ */
+
+ .service-list > li:first-child { padding-bottom: 30px; }
+
+ .service-card {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+
+ .service-card .card-icon { 
+     margin-bottom: 0;
+     
+     img{
+         width: 50px;
+         height: 44px;
+         color: white;
+         fill: aqua;
+     }
+  }
+
+ .service-card .card-content { width: calc(100% - 115px); }
+
+
+    /**
+ * SERVICE
+ */
+
+.service-btn {
+  right: -20px;
+  padding: 40px 50px;
+}  
+
+.service-content { padding-inline: 40px; }
+
+/**
+ * SERVICE
+ */
+
+ .service .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.service-content {
+  padding-inline: 0;
+  width: calc(100% - 470px);
+}
+
+.service-banner { margin-bottom: 0; }
+
+.service-btn { right: 111px; }
+
+
+/**
+ * SERVICE
+ */
+
+ .service-content { width: calc(100% - 700px); }
+
+ .service-btn { right: -20px; }
+
+ .service-list,
+ .service-title { max-width: 480px; }
+
+
+
+/*-----------------------------------*\
+ * #CTA
+\*-----------------------------------*/
+
+.cta {
+    background: url("https://th.bing.com/th/id/R.a6e7104e8459eb2293df2a15694f74e5?rik=P52lyv1TGcFYnA&riu=http%3a%2f%2fgaundam.gantep.edu.tr%2fupload%2fresimler%2f71-yellow-banner.jpg&ehk=aNZl26hCZ%2bIiUjc2tbanmuWWTo2%2fp7eoucDNo1Sg0r0%3d&risl=&pid=ImgRaw&r=0") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-block: 50px;
+  }
+  
+  .cta .title-wrapper { margin-bottom: 25px; }
+  
+  .cta-title {
+    color: var(--eerie-black);
+    font-size: var(--fs-3);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  
+  .cta-text {
+    color: var(--eerie-black);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+    line-height: 1.8;
+  }
+  
+  .cta .email-field {
+    //color: var(--eerie-black);
+    font-size: var(--fs-9);
+    padding: 18px 32px;
+    border-radius: 4px;
+   box-shadow: 0 3px 4px hsla(0, 0%, 0%, 0.2);
+    margin-bottom: 15px;
+  }
+  
+  .cta-form-btn {
+    background: var(--eerie-black);
+    color: var(--citrine);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--eerie-black);
+    padding: 15px 34px;
+    border-radius: 4px;
+    margin-inline: auto;
+    transition: var(--transition-1);
+  }
+  
+  .cta-form-btn:is(:hover, :focus) {
+    background: var(--citrine);
+    color: var(--eerie-black);
+  }
+ /**
+   * CTA
+   */
+
+   .cta-form {
+    position: relative;
+    max-width: 530px;
+    margin-inline: auto;
+  }
+
+  .cta .email-field { margin-bottom: 0; }
+
+  .cta-form-btn {
+    position: absolute;
+    top: 1px;
+    right: 150px;
+    bottom: 1px;
+    
+  }
+
+  .cta { text-align: left; }
+
+  .cta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta .title-wrapper {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .cta-form {
+    margin-inline: 0;
+    max-width: unset;
+    width: 100%;
+  }
+  .cta .container { max-width: 1150px; }
+
+
+  /**
+   * FOOTER
+   */
+   .brand-wrapper .logo { margin: 0; }
+
+   .brand-wrapper,
+   .quicklink-wrapper,
+   .bottom .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 50px;
+     padding: 20px;
+
+     .a{
+         color: aqua;
+     }
+   }
+ 
+   .quicklink-list { margin-bottom: 0; }
+ 
+   .cpyright { margin-bottom: 0; }
+ 
+   .bottom-img { margin-inline: 0; }
+
+
+   
+
+   
