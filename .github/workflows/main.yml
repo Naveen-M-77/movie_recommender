@@ -1,53 +1,29 @@
-# GitHub Actions CI for a React application
-# This workflow installs dependencies, runs lint/tests, and builds the production bundle.
-name: React CI
+name: CI
 
 on:
   push:
-    branches:
-      - '**'
+    branches: [main]
   pull_request:
-    branches:
-      - '**'
+    branches: [main]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
-    # Add legacy OpenSSL provider for webpack compatibility on Node >=17
-    env:
-      NODE_OPTIONS: '--openssl-legacy-provider'
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          # Specify the Node.js version you use in your project
-          node-version: '18'
-          cache: 'npm'
+          node-version: 16
 
       - name: Install dependencies
-        # Using npm install to avoid lockfile mismatch errors
         run: npm install
 
-      - name: Run ESLint (if configured)
-        run: |
-          if [ -f .eslintrc.js ] || [ -f .eslintrc.json ]; then
-            npm run lint;
-          else
-            echo 'No ESLint config found, skipping lint.';
-          fi
-
       - name: Run tests
-        # Allow exit with code 0 even if no tests are found
-        run: |
-          npm test -- --watchAll=false --ci --passWithNoTests
+        run: npm test -- --watchAll=false
 
-      - name: Build production bundle
-        # Disable CI environment to prevent warnings treated as errors
-        run: |
-          CI=false npm run build
-
-      # Optionally add deployment steps here
+      - name: Build project
+        run: npm run build
