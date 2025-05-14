@@ -1,87 +1,8 @@
-# Netflix Movies - Movie Recommendation Web App
-## Submission for Microsoft Engage 2021 🌟
+# Movie Recommendation Web App
 
-[![Generic badge](https://img.shields.io/badge/view-demo-blue?style=for-the-badge&label=View%20Demo%20Video)](https://www.youtube.com/watch?v=3lCWBglRtV8)
-
-[![Generic badge](https://img.shields.io/badge/View%20Live-Demo-orange?style=for-the-badge&label=View%20Live%20WebApp)](https://netflix-clone-ac744.web.app/)
-
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Sam0204/netflix_clone02-main?logo=github&style=for-the-badge)](https://github.com/Sam0204/) 
-[![GitHub last commit](https://img.shields.io/github/last-commit/Sam0204/netflix_clone02-main?style=for-the-badge&logo=git)](https://github.com/Sam0204) 
-[![GitHub stars](https://img.shields.io/github/stars/Sam0204/netflix_clone02-main?style=for-the-badge)](https://github.com/Sam0204/netflix_clone02-main) 
-[![My stars](https://img.shields.io/github/stars/Sam0204?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=My%20stars)](https://github.com/Apurva-tech/unite/stargazers)
-
-
-
-# react-movie
-
-    Responsive React Movies App With API
-    
-## Points to remember while testing the app
-
-1. You can download `zip file` of repository OR Clone this repo.
-2. First you have to go on root folder on that webapp. By using this command `cd app`.
-3. If yarn module not present in code then you can download By Using `yarn` OR `yarn install`.
-4. Then check `TMDB API` Key present or not in `app/src/api/apiConfig.js`. If present then go with 5th step.
-5. Open terminal and run the commant `yarn start` OR `npm start`. Now you can see the output in `http://localhost:3000/` on your default browser.
-6. While going to live demo link `https://netflix-clone-ac744.web.app/` of our website. Sometime if you refresh the page you see firebase documentation error. please `past` the above link again then you see website live demo. 
-7. While testing the `recommendations movies` scroll down of that movies you can see `similar` movies of that type. 
-8. The website is host on `Firebase`.
-
-## Instructions
-
-
-1. `git clone https://github.com/Sam0204/netflix_clone02-main.git` 
-2. `cd ./app` (for going to the root folder)
-3. Install node dependencies 
-   - `yarn install` OR `npm install` (If not present yarn module).
-4. If `api key` is not present then go with 5th step.(If api key is present then drop the 5th step & go with 6th step) 
-5. Replace TMDB API keys with your configurations (`Sign in` on `TMDB` and generate api key).
-6. Then simply use `yarn start` OR `npm start` for seeing output on browser.
-7. The app is now running at http://localhost:3000/landing 
-
-
-## Useful Links
-
-- [Deployed Website](https://netflix-clone-ac744.web.app/)
-- [Demo Video](https://www.youtube.com/watch?v=3lCWBglRtV8)
-- [Sprint Document]()
-- [Design Document]()
-
-## Need help?
-
-Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/sandesh-powar-374889205/) 
-
-[![Instagram](https://img.shields.io/badge/Instagram-follow-purple.svg?logo=instagram&logoColor=white)]() [![Twitter](https://img.shields.io/badge/Twitter-follow-blue.svg?logo=twitter&logoColor=white)]() 
-
-
----------
-
-```javascript
-
-if (youEnjoyed) {
-    starThisRepository();
-}
-
-```
-
------------
 
     
-
-
-# Resource
-
-    Google font: https://fonts.google.com/
-
-    Boxicons: https://boxicons.com/
-
-    Images: https://unsplash.com/
-
-    API: https://www.themoviedb.org/
-
 # Preview
-
-[![Generic badge](https://img.shields.io/badge/view-demo-blue?style=for-the-badge&label=View%20Demo%20Video)](https://www.youtube.com/watch?v=3lCWBglRtV8) 
 
 ![Capture](https://user-images.githubusercontent.com/97906758/170831594-dcaa84aa-3c51-4548-afeb-5a96b0474a64.PNG)
 ![Capture1](https://user-images.githubusercontent.com/97906758/170831596-00b4a71e-a2d7-413d-bee8-a0a36c1a1b9f.PNG)
@@ -100,3 +21,108 @@ if (youEnjoyed) {
 
 
 
+## Instructions
+
+1. `git clone https://github.com/Naveen-M-77/movie-recommende.git` 
+2. `cd ./app` (for going to the root folder)
+3. Install node dependencies 
+   - `yarn install` OR `npm install` (If not present yarn module).
+4. If `api key` is not present then go with 5th step.(If api key is present then drop the 5th step & go with 6th step) 
+5. Replace TMDB API keys with your configurations (`Sign in` on `TMDB` and generate api key).
+6. Then simply use `yarn start` OR `npm start` for seeing output on browser.
+7. The app is now running at http://localhost:3000/landing 
+
+
+
+## Points to remember while testing the app
+
+1. You can download `zip file` of repository OR Clone this repo.
+2. First you have to go on root folder on that webapp. By using this command `cd app`.
+3. If yarn module not present in code then you can download By Using `yarn` OR `yarn install`.
+4. Then check `TMDB API` Key present or not in `app/src/api/apiConfig.js`. If present then go with 5th step.
+5. Open terminal and run the commant `yarn start` OR `npm start`. Now you can see the output in `http://localhost:3000/` on your default browser.
+6. While going to live demo link `https://netflix-clone-ac744.web.app/` of our website. Sometime if you refresh the page you see firebase documentation error. please `past` the above link again then you see website live demo. 
+7. While testing the `recommendations movies` scroll down of that movies you can see `similar` movies of that type. 
+8. The website is host on `Firebase`.
+
+
+
+## Useful Links
+
+- [Deployed Website]()
+- [Sprint Document]()
+- [Design Document]()
+
+
+    
+## Tech Stack(Tools and Languages)🏆
+
+# Frontend                
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+
+# Backend
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+
+# ML
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Qiskit](https://img.shields.io/badge/Qiskit-6929c4?style=for-the-badge&logo=Qiskit&logoColor=white)
+
+# DevOps
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Docker Hub](https://img.shields.io/badge/docker%20hub-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-222222?style=for-the-badge&logo=github&logoColor=white)
+
+<h3 align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+</h3>
+
+
+
+# Resource
+
+    Google font: https://fonts.google.com/
+
+    Boxicons: https://boxicons.com/
+
+    Images: https://unsplash.com/
+
+    API: https://www.themoviedb.org/
+
+
+
+## Need help?
+
+Feel free to contact us on Linkedin  
+[![M Naveen](https://img.shields.io/badge/M%20Naveen-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/m-naveen-42244830a)   
+[![Ayush R](https://img.shields.io/badge/Ayush%20R-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](http://www.linkedin.com/in/ayush-r-4b87332b7)   
+[![Kushal U](https://img.shields.io/badge/Kushal%20U-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kushal-gowda-27ba292a2)
+
+
+
+-------
+
+```javascript
+
+if (youEnjoyed) {
+    starThisRepository();
+}
+
+```
+
+-----------
