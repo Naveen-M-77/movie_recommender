@@ -28,9 +28,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run ESLint
-        if: fileExists('.eslintrc.js') || fileExists('.eslintrc.json')
-        run: npm run lint
+      - name: Run ESLint (if configured)
+        run: |
+          if [ -f .eslintrc.js ] || [ -f .eslintrc.json ]; then
+            npm run lint;
+          else
+            echo 'No ESLint config found, skipping lint.';
+          fi
 
       - name: Run tests
         run: |
