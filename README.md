@@ -30,7 +30,7 @@
 4. If `api key` is not present then go with 5th step.(If api key is present then drop the 5th step & go with 6th step) 
 5. Replace TMDB API keys with your configurations (`Sign in` on `TMDB` and generate api key).
 6. Then simply use `yarn start` OR `npm start` for seeing output on browser.
-7. The app is now running at http://localhost:3000/landing 
+7. The app is now running at http://localhost:3000/landing .
 
 
 
