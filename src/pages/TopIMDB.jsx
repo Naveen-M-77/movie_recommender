@@ -7,7 +7,7 @@ export default function TopIMDB() {
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&sort_by=vote_average.desc&vote_count.gte=1000`
+        `https://api.themoviedb.org/3/discover/movie?api_key=f734c23290b011b4d7e03c3726646d97&language=en-US&sort_by=vote_average.desc&vote_count.gte=1000`
       )
       .then((res) => setMovies(res.data.results.slice(0, 10)))
       .catch((err) => console.error(err));
