@@ -50,4 +50,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/your-image-name:latest
+          tags: naveenm77/movie_recommender:latest
