@@ -7,7 +7,7 @@ export default function RecentRelease() {
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&page=1`
+        `https://api.themoviedb.org/3/movie/now_playing?api_key=f734c23290b011b4d7e03c3726646d97&language=en-US&page=1`
       )
       .then((res) => setMovies(res.data.results))
       .catch((err) => console.error(err));
